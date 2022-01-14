@@ -1,0 +1,56 @@
+Gestão de Aeronaves
+=============
+
+API voltada para gestão de aeronaves, cadastro e informações relevantes como ID, Modelo, Ano, status de venda e data de cadastro na base de dados:
+
+Dependências:
+
+1. Faça o download das dependências necessárias para a execução da API(ProjetoEmbraerFinalizado).
+2. Instale uma IDe de sua preferência para a execução da API, exemplos: Eclipse IDE, IntelliJ IDEA, Visual Studio Code - Code Editing etc.
+3. Necessário utilizar o software Postman API Platform ou similares, para testes na infraestrutura(BACKEND) da API.
+
+Utilizando a API:
+
+.Front End
+
+1. Em sua IDe de preferência, acesse a pasta disponibilizada e execute o arquivo no seguinte caminho:"\ProjetoEmbraerFinalizado\Embraer\src\main\java\embraer\prova\rest\api\EmbraerRestApiApplication.java"
+2. Em seguida, acesse o seguinte caminho e abra o arquivo em um navegador de sua preferência, caminho:"\ProjetoEmbraerFinalizado\EmbraerFrontEnd\GestaoAeronaves"
+3. Utilizando o navegador note que uma UI (User Interface) estará em execução se integrando com a API.
+4. Realize o cadastro das aeronaves conforme formulário.
+5. Note que o cadastro NÃO será aceito se uma MARCA não for selecionada.
+6. Após o preenchimento de todos os campos, cadastre a aeronave no botão GRAVAR.
+7. Campo pesquisa somente Modelo e ID.
+8. Somente serão informadas 2 décadas conforme cadastro.
+9. Aeronaves cadastradas durante o periódo de 7 dias serão informadas no formulário.
+
+.Back End
+
+1. Utilizando o Postman cadastre um novo ENDPOINT POST, com a seguinte url: localhost:8080/aeronaves/.
+2. Cadastre uma nova aeronave seguindo o exemplo:
+    {
+        "id": 1,
+        "nome": "A220",
+        "marca": "Airbus",
+        "ano": 2016,
+        "descricao": "aviões bimotores",
+        "vendido": false,
+        "created": "09/01/2022 11:55:28",
+        "updated": "09/01/2022 11:55:28"
+    }
+3. Note não serão aceitos objetos com informações erradas.
+4. Atualizar as informações de uma Aeronave será necessário acessar o ENDPOINT PUT na seguinte url e faça as alterações necessárias url: localhost:8080/aeronaves/{id} observação: informe um ID já existente.
+    {
+        "id": 1,
+        "nome": "680",
+        "marca": "Airbus",
+        "ano": 2016,
+        "descricao": "Família de aviões bimotores desenvolvida por Bombardier Aerospace",
+        "vendido": true,
+        "created": "09/01/2022 11:55:28",
+        "updated": "13/01/2022 04:39:08"
+    }
+5. Note a informação somente será atualizada se o ID informado na URL for CORRESPONDENTE ao avião desejado.
+6. Para remover uma aeronave da APi informe o ID correspondente da aeronave desejada no ENDPOINT DELETE na seguinte url: localhost:8080/aeronaves/{id}
+7. Consultar todas as aeronaves cadastradas no ENDPOINT GET acesse url:localhost:8080/aeronaves/
+8. Consultando uma aeronave especifica no ENDPOINT GET acesse a url: localhost:8080/{1}
+9. Consultando uma aeronave por NOME ou ID acesse a url: localhost:8080/aeronaves/find/{id} ou {nome}

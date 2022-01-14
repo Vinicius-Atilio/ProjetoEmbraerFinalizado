@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
+      <link rel="stylesheet" href="index.css">
+  <title>Embraer</title>
+</head>
+  <body class="container">
+    <div class="container1">
+      <h1 class="titulo">Gestão de Aeronaves</h1>
+      <input class="aeronave" type="text" maxlength="50" placeholder="Aeronave">
+        <select class="marca" id="marca" placeholder="marca" maxlength="50">
+          <option value="" disabled selected hidden>Marca</option>
+          <option value="Embraer">Embraer</option>
+          <option value="Boeing">Boeing</option>
+          <option value="Airbus">Airbus</option>
+        </select>
+        <input class="ano" type="text" maxlength="25" placeholder="Ano">
+        <select class="vendido" id="vendido">
+          <option value="true">Vendido</option>
+          <option value="false">Disponivel</option>
+        </select>
+        
+        <button type="button" class="botao-gravar" id="botao-gravar">Gravar</button>
+        <section class="tabela">
+
+          <li><span class="decada90">Década 90: <span><span id="decada90">0</span></li>
+            <li><span class="decada00">Década 00: <span><span id="decada00">0</span></li>
+            <li><span class="semana">Essa semana: <span><span id="semana">0</span></li>
+
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+              <input type="text" class="form-control" id="buscar" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Pesquisar por Modelo ou ID">
+            </div>
+
+            <table id = "exemplo" class="table table-striped">
+              <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>Marca</th>
+                      <th>Modelo</th>
+                      <th>Ano</th>
+                      <th>Vendido</th>
+                      <th>Criado</th>
+                      <th>Excluir</th>
+                  </tr>
+              </thead>
+              <tbody>   
+                   
+              </tbody>
+          </table>
+          <ul class="center">
+            <li><span>Marcas</span></li>
+            <li><span >Airbus:</span ><span class="airbus">0</span></li>
+            <li><span >Boeing:</span ><span class="boeing">0</span></li>
+            <li><span >Embraer:</span ><span class="embraer">0</span></li>
+        </ul>
+        </section>
+        <script>
+        </script>
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+      <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
+      <script src="./js/app.js"></script>
+    </div>
+  </body>
+</html>

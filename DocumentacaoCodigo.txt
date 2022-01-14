@@ -1,0 +1,123 @@
+JavaScript 
+
+Função aviaoInsere():  
+
+Atualiza os dados na página ao ser carregada. 
+
+ 
+
+ Função aviaoListar():  
+
+Lista os aviões na tabela.  
+
+ 
+
+Função contarMarcas():  
+
+Retorna à quantidade total de marcas das aeronaves. 
+
+ 
+
+ Função contarDecadas(): 
+
+ Retorna à quantidade de aeronaves referentes as décadas de 90 e 00.  
+
+ 
+
+Função contarSemana():  
+
+Retorna aeronaves cadastradas nos últimos 7 dias.  
+
+ 
+
+Função renderizarContadores():  
+
+Renderiza todos os contadores no formulário.  
+
+ 
+
+Função aviaoBuscar():  
+
+Ao digitar ID ou Modelo no campo buscar no formulário, a função retorna a busca desejada.  
+
+Função aviaoRenderizarLinha():  
+
+Renderiza todas as propriedades cadastradas no formulário. 
+
+ 
+
+Função aviaoRemoveDadosTabela():  
+
+Remove os dados cadastrados no formulário. 
+
+ 
+
+Função formatarDataParaString():  
+
+Formata a data para um string.  
+
+ 
+
+Função verificarSeEhDiaDessaSemana():  
+
+Verifica a data atual para validar se o avião cadastrado está registrado nos últimos 7 dias.  
+
+ 
+
+Função adicionarDiasEmUmaData():  
+
+calcula a data atual e adiciona em uma nova data. 
+
+ 
+
+Função subtrairDiasEmUmaData():  
+
+calcula a data atual e subtrai para encontrar uma nova data.  
+
+ 
+
+Função parseDateDoFormatoBanco():  
+
+Converte a data atual para o pattern do banco de dados.  
+
+ 
+
+JAVA Classe EmbraerRestApiApplication: 
+
+ Inicia a API.  
+
+ 
+
+Classe AviaoController:  
+
+Cria as rotas da API.  
+
+ 
+
+Classe StatusController:  
+
+Verifica o status da API.  
+
+ 
+
+Classe DateHelper:  
+
+Converte o formato da data e hora para nossa região. 
+
+ 
+
+ Classe AviaoMarca:  
+
+Cria o objeto ENUM definindo as marcas. 
+
+ 
+
+ Classe AviaoModel:  
+
+Cria o objeto avião e seus parâmetros  
+
+ 
+
+Classe AviaoRepository:  
+
+Cria um repositório para a API. 
